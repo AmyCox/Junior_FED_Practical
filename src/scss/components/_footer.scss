@@ -2,21 +2,20 @@
 
 .footer {
   background-color: #434243;
-  color: #ffffff; // Ensure text color is readable on dark background
+  color: #ffffff;
   margin-top: 40px;
 
   &__top {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; // Allows links to wrap if screen width is narrow
+    flex-wrap: wrap;
     padding: 30px 0;
-    border-bottom: 1px solid #ffffff; // White line separating the rows
+    border-bottom: 1px solid #ffffff;
   }
-
   &__nav {
     display: flex;
-    gap: 16px; // Space between each link
-    flex-wrap: wrap; // Wrap links on smaller screens
+    gap: 16px;
+    flex-wrap: wrap;
   }
 
   &__link {
@@ -25,7 +24,7 @@
     font-size: 16px;
 
     &:hover {
-      text-decoration: underline; // Add underline on hover for accessibility
+      text-decoration: underline;
     }
   }
 
@@ -35,6 +34,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__social-icons {
