@@ -5,6 +5,8 @@ module.exports = {
   assetPath: '/public',
   pageTitle: 'PxlPro Jobs',
   heroMessage: 'Search 1,570 jobs.',
+  heroSubheading:
+  "Hundreds of new career opportunities each day. Find your perfect job.",
   navItems: [
     {
       label: "Home",
