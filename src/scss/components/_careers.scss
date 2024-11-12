@@ -54,6 +54,7 @@
   }
   &__featurecontainer {
     grid-column: span 8;
+    margin-left: 10px;
   }
   &__feature {
     flex-direction: column;
@@ -82,5 +83,28 @@
   }
   &__feature-subtitle {
     font-size: 17px;
+  }
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-column: span 8;
+  margin-top: 40px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+
+  .articles__title {
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 12px;
   }
 }
