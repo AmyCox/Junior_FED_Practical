@@ -1,49 +1,45 @@
-@use "../variables";
-
+@use '../variables';
 
 .employers {
+  background-color: variables.$color-brand;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto;
+  gap: 16px;
+  min-height: 216px;
+  padding-bottom: 3%;
+  &__container {
     background-color: variables.$color-brand;
+  }
+  &__heading {
+    grid-column: 1 / 13;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto;
-    gap: 16px; 
-    min-height: 216px;
-    padding-bottom: 3%;
-    &__container {
-        background-color: variables.$color-brand;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    color: white;
 
+    h3 {
+      font-size: 1.5rem;
     }
-    &__heading {
-      grid-column: 1 / 13; //start col 2 and end 12
-      display: grid;
-      grid-template-columns: auto 1fr;
-      align-items: center;
-      color: white;
-  
-      h3 {
-        font-size: 1.5rem;
-      }
-  
-      p {
-        font-size: 1rem;
-        grid-column-end: 11;
-      }
-    }
-  
-    &__grid {
-      grid-column: 1 / 13; // Content spans columns 2 to 11 (start at column 2, end at column 11)
-      display: grid;
-      grid-template-columns: repeat(6, 1fr); // 6 equal-width columns for the employer images
-      gap: 8px; // Optional gap between images
-    }
-  
-    &__image {
-      width: 100%; // Ensure the image takes up the full width of its grid cell
-  
-      img {
-        width: 100%; 
-        height: auto; 
-      }
+
+    p {
+      font-size: 1rem;
+      grid-column-end: 11;
     }
   }
-  
+
+  &__grid {
+    grid-column: 1 / 13;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+  }
+
+  &__image {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -8,7 +8,7 @@
   background-size: cover;
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(12, 1fr); // Defines 12 equal-width columns
+    grid-template-columns: repeat(12, 1fr);
     gap: 1.5rem;
   }
 
@@ -22,15 +22,14 @@
     justify-content: center;
     text-align: center;
     padding: 2rem;
-    box-sizing: border-box; /* Ensures padding and margin are included in width calculation */
-    max-width: 380px; /* Ensures the block width doesn't exceed 220px */
-    max-height: 220px; /* Restricts the height to 220px */
+    box-sizing: border-box;
+    max-width: 380px;
+    max-height: 220px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     flex-shrink: 0;
     overflow: hidden;
-    margin-top : calc(220px * 0.3); /* 30% of the block's height */
-    margin-bottom : calc(220px * 0.3); /* 30% of the block's height */
-
+    margin-top: calc(220px * 0.3);
+    margin-bottom: calc(220px * 0.3);
   }
 
   &__icon {
@@ -53,55 +52,54 @@
     width: 80%;
   }
 
-
   @media (max-width: 1200px) {
     &__icon {
-      width: 45px; /* Slightly smaller icon on medium screens */
+      width: 45px;
     }
 
     &__title {
-      font-size: 1.1rem; /* Slightly smaller title text */
+      font-size: 1.1rem;
     }
 
     &__subheading {
-      font-size: 0.9rem; /* Slightly smaller subheading text */
+      font-size: 0.9rem;
     }
   }
 
   @media (max-width: 768px) {
     &__block {
-      grid-column: span 6; /* Adjust block layout for smaller screens */
+      grid-column: span 6;
     }
 
     &__icon {
-      width: 40px; /* Further reduce icon size */
+      width: 40px;
     }
 
     &__title {
-      font-size: 1rem; /* Smaller title text */
+      font-size: 1rem;
     }
 
     &__subheading {
-      font-size: 0.85rem; /* Smaller subheading text */
+      font-size: 0.85rem;
     }
   }
 
   @media (max-width: 480px) {
     &__block {
-      grid-column: span 12; /* Block takes full width on small screens */
-      padding: 1rem; /* Reduce padding for small screens */
+      grid-column: span 12;
+      padding: 1rem;
     }
 
     &__icon {
-      width: 35px; /* Even smaller icon for very small screens */
+      width: 35px;
     }
 
     &__title {
-      font-size: 0.9rem; /* Smaller title text */
+      font-size: 0.9rem;
     }
 
     &__subheading {
-      font-size: 0.8rem; /* Smaller subheading text */
+      font-size: 0.8rem;
     }
   }
 }

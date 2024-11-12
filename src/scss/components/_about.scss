@@ -30,7 +30,7 @@
   &__item {
     grid-column: span 4;
     background-color: variables.$color-brand-tint;
-    padding: 16px 0 16px 16px; // Applies padding-top, padding-right, padding-bottom, and padding-left respectively
+    padding: 16px 0 16px 16px;
   }
   &__icon {
     width: 135px;
