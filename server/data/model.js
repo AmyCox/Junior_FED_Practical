@@ -107,4 +107,30 @@ module.exports = {
         'Upload your resume so our employers can match your details to the best jobs.',
     },
   ],
+  employers: [
+    {
+      image: "public/images/_employers/citi.png",
+      alt: "Citi",
+    },
+    {
+      image: "public/images/_employers/agstar.png",
+      alt: "Agstar",
+    },
+    {
+      image: "public/images/_employers/ford.png",
+      alt: "Ford",
+    },
+    {
+      image: "public/images/_employers/ioxus.png",
+      alt: "Ioxus",
+    },
+    {
+      image: "public/images/_employers/nike.png",
+      alt: "Nike",
+    },
+    {
+      image: "public/images/_employers/oracle.png",
+      alt: "Oracle",
+    },
+  ],
 };
