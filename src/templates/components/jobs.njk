@@ -1,0 +1,54 @@
+<section class="jobs">
+    <div class="jobs__container">
+        <div class="jobs__heading">
+            <h3>Browse jobs by sector</h3>
+            <a aria-label="View all job sectors">View all &gt&gt</a>
+        </div>
+        <div class="jobs__list">
+            <ul class="u-reset-list">
+                {% for item in sectorItems %}
+                    {% if loop.index <= 7 %}
+                        <li class="jobs__list-item">
+                            <a>
+                                {{ item.label }}<span class=>
+                                    {{ item.vacancies }}</span>
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul class="jobs__sectors-column u-reset-list">
+                {% for item in sectorItems %}
+                    {% if loop.index > 7 %}
+                        <li class="jobs__list-item">
+                            <a>
+                                {{ item.label }}<span class=>
+                                    {{ item.vacancies }}</span>
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="jobs__feature-container">
+        <div class="jobs__heading">
+            <h3>Featured Jobs</h3>
+            <a>View all jobs >></a>
+        </div>
+        <ul class="u-reset-list">
+            {% for item in featuredJobs %}
+                <li class="jobs__featured-item">
+                    <div class="jobs__featured-item-content">
+                        <img src="{{ item.image }}" alt="Company logo for {{ item.company }}" class="jobs__featured-item-image">
+                            <div class="jobs__featured-item-details">
+                                <a aria-label="Job title" class="jobs__featured-item-position">{{ item.position }}</a>
+                                <p aria-label="Job location" class="jobs__featured-item-location">{{ item.location }}</p>
+                                <p aria-label="Job compensation" class="jobs__featured-item-compensation">{{ item.compensation }}</p>
+                            </div>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
