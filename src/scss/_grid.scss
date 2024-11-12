@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-      .grid__item {
+.grid__item {
   display: inline-block;
   font-size: 1rem;
   padding-bottom: 20px;
@@ -33,7 +33,7 @@ $column-count: 12;
 @for $i from 1 through $column-count {
   $width: percentage($i/$column-count);
   .col-medium-#{$i} {
-    @media (min-width: $breakpoint-small + 1) {
+    @media (min-width: #{$breakpoint-small + 1}) {
       width: $width;
     }
   }
@@ -42,7 +42,7 @@ $column-count: 12;
 @for $i from 1 through $column-count {
   $width: percentage($i/$column-count);
   .col-large-#{$i} {
-    @media (min-width: $breakpoint-medium + 1) {
+    @media (min-width: #{$breakpoint-medium + 1}) {
       width: $width;
     }
   }

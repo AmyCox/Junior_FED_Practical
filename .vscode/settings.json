@@ -1,0 +1,9 @@
+{
+    "[scss]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[njk]": {
+      "editor.defaultFormatter": "eseom.nunjucks-template"
+    },
+    "editor.formatOnSave": true
+  }
