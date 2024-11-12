@@ -10,7 +10,7 @@ module.exports = {
       label: "Home",
       href: "#",
       id: "home",
-      arialLabel: "Navigate to home page"
+      ariaLabel: "Navigate to home page"
     },
     {
       label: "Find a job",
