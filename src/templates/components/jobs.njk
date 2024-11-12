@@ -38,13 +38,13 @@
         </div>
         <ul class="u-reset-list">
             {% for item in featuredJobs %}
-                <li class="jobs__featured-item">
-                    <div class="jobs__featured-item-content">
-                        <img src="{{ item.image }}" alt="Company logo for {{ item.company }}" class="jobs__featured-item-image">
+                <li class="jobs__featuredjob">
+                    <div class="jobs__featured-item">
+                        <img src="{{ item.image }}" alt="Company logo for {{ item.company }}" class="jobs__image">
                             <div class="jobs__featured-item-details">
-                                <a aria-label="Job title" class="jobs__featured-item-position">{{ item.position }}</a>
-                                <p aria-label="Job location" class="jobs__featured-item-location">{{ item.location }}</p>
-                                <p aria-label="Job compensation" class="jobs__featured-item-compensation">{{ item.compensation }}</p>
+                                <a aria-label="Job title" class="jobs__position">{{ item.position }}</a>
+                                <p aria-label="Job location" class="jobs__location">{{ item.location }}</p>
+                                <p aria-label="Job compensation" class="jobs__compensation">{{ item.compensation }}</p>
                             </div>
                         </div>
                     </li>

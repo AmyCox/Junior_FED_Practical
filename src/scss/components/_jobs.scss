@@ -28,4 +28,28 @@
   &__feature-container {
     grid-column: span 4;
   }
+  &__featuredjob {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  &__featured-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 15px;
+  }
+  &__image {
+    width: 140px;
+    height: 70px;
+    border: 1px solid #dddddd;
+  }
+  &__position {
+    margin: 0;
+  }
+  &__location {
+    margin: 0;
+  }
+  &__compensation {
+    margin: 0;
+  }
 }
