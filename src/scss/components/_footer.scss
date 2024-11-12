@@ -1,0 +1,43 @@
+@use '../variables';
+
+.footer {
+  background-color: #434243;
+  color: #ffffff; // Ensure text color is readable on dark background
+  margin-top: 40px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; // Allows links to wrap if screen width is narrow
+    padding: 30px 0;
+    border-bottom: 1px solid #ffffff; // White line separating the rows
+  }
+
+  &__nav {
+    display: flex;
+    gap: 16px; // Space between each link
+    flex-wrap: wrap; // Wrap links on smaller screens
+  }
+
+  &__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+
+    &:hover {
+      text-decoration: underline; // Add underline on hover for accessibility
+    }
+  }
+
+  &__bottom {
+    padding: 10px 0;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__social-icons {
+    padding: 10px;
+  }
+}
