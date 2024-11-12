@@ -4,6 +4,8 @@
   background: variables.$color-brand;
   font-family: "Arial";
   padding: 6px 0;
+  font-size: 13px;
+  line-height: 23px;
 
   a {
     color: white;
@@ -17,4 +19,5 @@
 .account-bar__inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
