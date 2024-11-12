@@ -86,20 +86,24 @@ module.exports = {
   ],
   ctas: [
     {
-      icon: 'job-alerts',
+      icon: 'public/images/_ctas/icon_email.svg',
+      alt: 'email icon',
       title: 'Get instant job alerts',
-      subtitle: 'Personalised job recommendations sent straight to your email.',
+      subheading:
+        'Personalised job recommendations sent straight to your email.',
     },
     {
-      icon: 'create-account',
+      icon: 'public/images/_ctas/icon_profile.svg',
+      alt: 'profile icon',
       title: 'Create an account for free',
-      subtitle:
+      subheading:
         'Shortlist jobs, manage your job alerts and receive special offers.',
     },
     {
-      icon: 'upload-resume',
+      icon: 'public/images/_ctas/icon_upload.svg',
+      alt: 'upload icon',
       title: 'Upload your resume',
-      subtitle:
+      subheading:
         'Upload your resume so our employers can match your details to the best jobs.',
     },
   ],

@@ -1,0 +1,107 @@
+@use '../variables';
+
+.cta {
+  width: 100%;
+  max-height: 362px;
+
+  background: url('/public/images/_ctas/cta-bg.png') center center no-repeat;
+  background-size: cover;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); // Defines 12 equal-width columns
+    gap: 1.5rem;
+  }
+
+  &__block {
+    position: relative;
+    grid-column: span 4;
+    background-color: rgba(52, 52, 51, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    box-sizing: border-box; /* Ensures padding and margin are included in width calculation */
+    max-width: 380px; /* Ensures the block width doesn't exceed 220px */
+    max-height: 220px; /* Restricts the height to 220px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+    overflow: hidden;
+    margin-top : calc(220px * 0.3); /* 30% of the block's height */
+    margin-bottom : calc(220px * 0.3); /* 30% of the block's height */
+
+  }
+
+  &__icon {
+    width: 50px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: variables.$color-white;
+  }
+
+  &__subheading {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: variables.$color-white;
+    width: 80%;
+  }
+
+
+  @media (max-width: 1200px) {
+    &__icon {
+      width: 45px; /* Slightly smaller icon on medium screens */
+    }
+
+    &__title {
+      font-size: 1.1rem; /* Slightly smaller title text */
+    }
+
+    &__subheading {
+      font-size: 0.9rem; /* Slightly smaller subheading text */
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__block {
+      grid-column: span 6; /* Adjust block layout for smaller screens */
+    }
+
+    &__icon {
+      width: 40px; /* Further reduce icon size */
+    }
+
+    &__title {
+      font-size: 1rem; /* Smaller title text */
+    }
+
+    &__subheading {
+      font-size: 0.85rem; /* Smaller subheading text */
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__block {
+      grid-column: span 12; /* Block takes full width on small screens */
+      padding: 1rem; /* Reduce padding for small screens */
+    }
+
+    &__icon {
+      width: 35px; /* Even smaller icon for very small screens */
+    }
+
+    &__title {
+      font-size: 0.9rem; /* Smaller title text */
+    }
+
+    &__subheading {
+      font-size: 0.8rem; /* Smaller subheading text */
+    }
+  }
+}

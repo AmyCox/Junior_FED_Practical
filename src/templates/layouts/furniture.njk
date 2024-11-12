@@ -38,6 +38,12 @@
             <div class="wrapper">
               {% block content %}{% endblock %}
             </div>
+            {% block cta %}
+              {% include 'components/cta.njk' %}
+            {% endblock %}
+            <div class="wrapper">
+
+              </div>
           </main>
         {% endblock %}
         {% block footer %}

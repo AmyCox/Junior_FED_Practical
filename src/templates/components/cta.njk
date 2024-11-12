@@ -1,0 +1,11 @@
+<section class="cta">
+    <div class="cta__wrapper wrapper">
+        {% for item in ctas %}
+            <div class="cta__block">
+                <img src="{{ item.icon }}" alt="{{ item.alt }}" class="cta__icon">
+                    <h3 class="cta__title">{{ item.title }}</h3>
+                    <p class="cta__subheading">{{ item.subheading }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
