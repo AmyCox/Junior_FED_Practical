@@ -1,11 +1,10 @@
-@use "../variables";
+@use '../variables';
 
 .page-header {
   align-items: center;
   display: flex;
   justify-content: space-between;
   padding: 24px 0;
-  position: relative;
 
   @media screen and (max-width: variables.$breakpoint-small) {
     .no-js & {
@@ -42,9 +41,18 @@
 
 .page-nav__item {
   display: inline-block;
-  font-family: "ProximaNova";
-  font-weight: 500;
+  font-family: 'Arial';
+  font-weight: 700;
   margin-left: 30px;
+
+  &-advertise {
+    background-color: variables.$color-brand;
+
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 300;
+  }
 
   @media screen and (max-width: 895px) {
     margin-left: 18px;

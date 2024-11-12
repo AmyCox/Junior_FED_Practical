@@ -1,7 +1,7 @@
-<nav>
+<nav aria-label="Primary navigation">
     <ul class="page-nav u-reset-list">
         {% for item in navItems %}
-            <li class="page-nav__item">
+            <li class="page-nav__item {% if item.href == '#advertise-a-job' %}page-nav__item-advertise{% endif %}">
                 <a aria-label="{{ item.ariaLabel }}" href="{{ item.href }}">{{ item.label }}</a>
             </li>
         {% endfor %}

@@ -1,0 +1,12 @@
+@use '../variables';
+
+.hero {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 544px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/public/images/hero.png') center center / cover no-repeat;
+}
