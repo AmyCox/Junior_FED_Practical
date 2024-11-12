@@ -1,10 +1,30 @@
 # Notes 
 
 ## The `.no-js` Class
-There is a .no-js class on the page-header class. I think that would mean I would have class="no-js" added to the html tag and then run a bit of code like 
+There is a .no-js class on the page-header class. I think that would mean I would have to have class="no-js" added to the html tag and then run a bit of code like 
 ```javascript
 document.documentElement.classList.remove('no-js');
 ```
  at the top of my script. I would need to clarify this.
+
+## Responsiveness
+
+I have not had the time to work on media queries for different screen sizes
+
+## Radius input
+
+I haven't been able to work on the arrow for this - it is not faithful to the design and the input needs styling worked on.
+
+## Screen readers
+
+I have tried to keep in mind how you would tab through the page and grouped sections together - so the ads are grouped together in 'careers.njk' and the advice is grouped together. This is as far as I understand it - I know I have alot more to learn
+
+## Interactions 
+
+There are a couple of introduced interactions hovers etc.. but I would work on button styling etc...
+
+## model.js
+
+I can see my linter has picked up an error that I have yet to get round to investigating. I would also in real life be getting alot of this information I am assuming from an api. I would probably have used typescript in production.
 
  
