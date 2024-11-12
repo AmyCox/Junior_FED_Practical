@@ -1,4 +1,4 @@
-@use "sass:meta";
+@use 'sass:meta';
 @use 'variables';
 @use 'normalize';
 @font-face {
@@ -24,7 +24,11 @@ html {
 
 body {
   color: #333333;
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Helvetica,
+    Arial sans-serif;
   line-height: 1.5;
   margin: 0 auto;
   max-width: 1900px;
@@ -33,8 +37,13 @@ body {
 a {
   color: variables.$color-brand;
   text-decoration: none;
+  transition:
+    color 0.3s ease,
+    text-decoration 0.3s ease,
+    transform 0.3s ease;
+
   &:hover {
-    text-decoration: underline;
+    transform: scale(1.03); 
   }
 }
 
