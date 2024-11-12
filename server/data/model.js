@@ -61,6 +61,29 @@ module.exports = {
     { label: 'Sciences', vacancies: 79 },
     { label: 'Sports & Fitness', vacancies: 72 },
   ],
+  featuredJobs: [
+    {
+      position: 'Business Systems Analyst',
+      location: 'New York City',
+      compensation: '$30,000-$40,000',
+      image: 'public/images/_jobs/microsoft.png',
+      company: 'microsoft',
+    },
+    {
+      position: 'Paralegal Positions',
+      location: 'Newton MA',
+      compensation: 'Competitive salary',
+      image: 'public/images/_jobs/amex.png',
+      company: 'amex',
+    },
+    {
+      position: 'Operations Director',
+      location: 'Cape Canaveral, FL',
+      compensation: 'Up to $100,000',
+      image: 'public/images/_jobs/nasa.png',
+      company: 'nasa',
+    },
+  ],
   ctas: [
     {
       icon: 'job-alerts',
