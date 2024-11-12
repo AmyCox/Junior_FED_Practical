@@ -1,19 +1,35 @@
 @use '../variables';
 
 .hero {
-  display: flex;
-  flex-direction: column;
-
+  display: flex; 
+  flex-direction: column; 
+  
   width: 100%;
   min-height: 544px;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('/public/images/hero.png') center center / cover no-repeat;
-  color: white;
+  overflow: visible;
+  &__message {
+    color: white;
+    font-weight: 500;
+    font-size: 48px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
 
-  &__search {
-    margin-top: auto;
-    background: hotpink;
-    height: 40px;
+  &__subheading {
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (max-width: variables.$breakpoint-small) {
+    &__message {
+      font-size: 6vw;
+    }
   }
 }

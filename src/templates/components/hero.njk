@@ -1,7 +1,25 @@
+
 <section class="hero">
-    <h1>{{heroMessage}}</h1>
-    <h2>{{heroSubheading}}</h2>
-    <div class="hero__search">
-        <form aria-label="search for jobs form" class="hero__search-form"></form>
+        <h1 class="hero__message">{{ heroMessage }}</h1>
+        <h2 class="hero__subheading">{{ heroSubheading }}</h2>
+    <div class="search hero_search">
+        <div class="wrapper" aria-label="Search form">
+            <form class="search__overlay">
+                <label class="search__overlay-keyword" for="search-keyword">
+                    <input type="text" id="search-keyword" class="search__overlay-input" placeholder="Keyword (e.g., Manager)"/>
+                </label>
+                <label class="search__overlay-location" for="search-location">
+                    <input type="text" id="search-location" class="search__overlay-input" placeholder="Location (e.g., Boston)"/>
+                </label>
+                <label class="search__overlay-radius" for="search-radius">
+                    <select id="search-radius" class="search__select">
+                        <option value="10">Within 10 miles</option>
+                        <option value="25">Within 25 miles</option>
+                        <option value="50">Within 50 miles</option>
+                    </select>
+                </label>
+                <button type="submit" class="search__button">Search</button>
+            </form>
+        </div>
     </div>
 </section>
