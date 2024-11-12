@@ -7,6 +7,16 @@
   padding-left: 0;
 }
 
+.u-column-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.u-row-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 .u-hide-x-small {
   @media (max-width: variables.$breakpoint-x-small) {
     display: none;
