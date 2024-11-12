@@ -11,6 +11,10 @@ document.documentElement.classList.remove('no-js');
 
 I have not had the time to work on media queries for different screen sizes
 
+## Line in footer 
+
+I know the line in the footer needs to go the whole way across but the wrapper is in the way - I would have to work on this!
+
 ## Radius input
 
 I haven't been able to work on the arrow for this - it is not faithful to the design and the input needs styling worked on.
