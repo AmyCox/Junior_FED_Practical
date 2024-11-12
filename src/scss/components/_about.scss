@@ -1,54 +1,69 @@
-@use "../variables";
+@use '../variables';
+.cards {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 40px;
+  gap: 20px;
+  max-height: 264px;
+
+  &__title {
+    font-size: 19px;
+    font-weight: 700px;
+  }
+  &__content {
+    font-size: 15px;
+    font-weight: 400px;
+  }
+}
+
 .about {
-    &__info {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      margin-top: 40px;
-      gap: 20px;
-      &-item {
-        background-color: variables.$color-grey;
-        padding: 16px;
-        grid-column: span 4;
-  
-        .careers__info-title {
-          font-size: 1.2rem;
-          font-weight: bold;
-          margin-bottom: 8px;
-        }
-  
-        .careers__info-content {
-          font-size: 1rem;
-          color: #333;
-        }
-  
-        .careers__info-links {
-          list-style: none;
-          padding: 0;
-  
-          li {
-            margin-bottom: 4px;
-  
-            a {
-              color: #0066cc;
-              text-decoration: none;
-            }
-          }
-        }
-      }
+  &__item {
+    background-color: variables.$color-grey;
+    padding: 16px;
+    grid-column: span 4;
+  }
+}
+
+.app {
+  &__item {
+    grid-column: span 4;
+    background-color: variables.$color-brand-tint;
+    padding: 16px;
+  }
+}
+
+.campaigns {
+  &__item {
+    background-color: variables.$color-grey;
+    padding: 16px;
+    grid-column: span 4;
+  }
+}
+
+.careers__info-links {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 4px;
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
     }
   }
-  
-  /* For smaller screens (e.g., tablets) */
-  @media (max-width: 768px) {
-    .about__info {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    }
+}
+
+/* For smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+  .about__info {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
   }
-  
-  /* For even smaller screens (e.g., mobile phones) */
-  @media (max-width: 480px) {
-    .about__info {
-      grid-template-columns: 1fr; /* 1 column */
-    }
+}
+
+/* For even smaller screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .about__info {
+    grid-template-columns: 1fr; /* 1 column */
   }
-  
+}
