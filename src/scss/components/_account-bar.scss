@@ -1,0 +1,20 @@
+@use "../variables";
+
+.account-bar {
+  background: variables.$color-brand;
+  font-family: "ProximaNova";
+  padding: 6px 0;
+
+  a {
+    color: white;
+
+    & + a {
+      margin-left: 27px;
+    }
+  }
+}
+
+.account-bar__inner {
+  display: flex;
+  justify-content: space-between;
+}

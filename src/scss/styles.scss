@@ -1,0 +1,59 @@
+@use "sass:meta";
+@use 'variables';
+@use 'normalize';
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-weight: 500;
+  src: url('../fonts/ProximaNova-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-weight: 700;
+  src: url('../fonts/ProximaNova-Bold.woff') format('woff');
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  color: #333333;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial sans-serif;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 1900px;
+}
+
+a {
+  color: variables.$color-brand;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'ProximaNova';
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1180px + (variables.$page-padding * 2);
+  padding: 0 variables.$page-padding;
+}
+
+@include meta.load-css('utilities');
+@include meta.load-css('components/skip-link');
+@include meta.load-css('components/account-bar');
+@include meta.load-css('components/page-header');
