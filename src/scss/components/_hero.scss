@@ -1,9 +1,8 @@
 @use '../variables';
 
 .hero {
-  display: flex; 
-  flex-direction: column; 
-  
+  display: flex;
+  flex-direction: column;
   width: 100%;
   min-height: 544px;
   background:
@@ -16,15 +15,17 @@
     font-size: 48px;
     font-family: Arial, sans-serif;
     text-align: center;
+    top: 50%;
     padding: 0;
-    margin: 0;
+    margin: auto;
+    justify-content: flex-end;
   }
 
   &__subheading {
     color: white;
     text-align: center;
     padding: 0;
-    margin: 0;
+    margin: auto;
   }
 
   @media (max-width: variables.$breakpoint-small) {
