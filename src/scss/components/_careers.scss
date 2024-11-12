@@ -1,3 +1,5 @@
+@use '../variables';
+
 .careers {
   &__container {
     display: grid;
@@ -22,6 +24,10 @@
     padding: 24px;
     color: #fff;
     margin-top: 40px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
   &__adheading {
     font-size: 21px;
@@ -38,11 +44,43 @@
     font-size: 16px; // Match list font-size to heading if needed
   }
   &__btn {
-    background-color: #d0021b; // Red button color
+    background-color: variables.$color-secondary; // Red button color
     color: #fff;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
     font-size: 1rem;
+    max-width: 118px;
+  }
+  &__featurecontainer {
+    grid-column: span 8;
+  }
+  &__feature {
+    flex-direction: column;
+    display: flex;
+  }
+  &__heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+  }
+  &__feature {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+  &__feature-image {
+    grid-column: span 4;
+  }
+  &__feature-text {
+    grid-column: span 4;
+  }
+  &__feature-title {
+    font-size: 21px;
+    font-weight: 700;
+  }
+  &__feature-subtitle {
+    font-size: 17px;
   }
 }

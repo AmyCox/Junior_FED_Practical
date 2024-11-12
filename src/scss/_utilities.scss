@@ -1,6 +1,5 @@
 @use 'variables';
 
-
 .u-reset-list {
   list-style-type: none;
   margin-bottom: 0;
@@ -12,4 +11,8 @@
   @media (max-width: variables.$breakpoint-x-small) {
     display: none;
   }
+}
+
+.u-margin-0 {
+  margin: 0;
 }
