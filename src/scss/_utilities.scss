@@ -1,6 +1,15 @@
+@use 'variables';
+
+
 .u-reset-list {
   list-style-type: none;
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0;
+}
+
+.u-hide-x-small {
+  @media (max-width: variables.$breakpoint-x-small) {
+    display: none;
+  }
 }
