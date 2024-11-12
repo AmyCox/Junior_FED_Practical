@@ -9,8 +9,12 @@
     gap: 16px; 
     min-height: 216px;
     padding-bottom: 3%;
+    &__container {
+        background-color: variables.$color-brand;
+
+    }
     &__heading {
-      grid-column: 2 / 12; //start col 2 and end 12
+      grid-column: 1 / 13; //start col 2 and end 12
       display: grid;
       grid-template-columns: auto 1fr;
       align-items: center;
@@ -27,7 +31,7 @@
     }
   
     &__grid {
-      grid-column: 2 / 12; // Content spans columns 2 to 11 (start at column 2, end at column 11)
+      grid-column: 1 / 13; // Content spans columns 2 to 11 (start at column 2, end at column 11)
       display: grid;
       grid-template-columns: repeat(6, 1fr); // 6 equal-width columns for the employer images
       gap: 8px; // Optional gap between images

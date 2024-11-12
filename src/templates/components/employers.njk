@@ -1,12 +1,16 @@
-<section class="employers">
-  <div class="employers__heading">
-    <h3>Featured employers</h3>
-    <p>View all employers >></p>
-  </div>
-  <div class="employers__grid">
-    {% for item in employers %}
-      <div class="employers__image">
-        <img src="{{ item.image }}" alt="{{ image.alt }}"></div>
-      {% endfor %}
-    </div>
-  </section>
+<section class="employers__container">
+    <div class="wrapper ">
+        <div class="employers">
+            <div class="employers__heading">
+                <h3>Featured employers</h3>
+                <p>View all employers >></p>
+            </div>
+            <div class="employers__grid">
+                {% for item in employers %}
+                    <div class="employers__image">
+                        <img src="{{ item.image }}" alt="{{ image.alt }}"></div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
