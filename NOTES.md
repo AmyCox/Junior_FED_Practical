@@ -9,7 +9,7 @@ document.documentElement.classList.remove('no-js');
 
 ## Responsiveness
 
-I have not had the time to work on media queries for different screen sizes
+I have not had the time to work on media queries for different screen sizes, if I get a chance tomorrow I will take a look at this as I built it in grid I would be able to stack the elements with media queries.
 
 ## Line in footer 
 
